@@ -13,7 +13,7 @@ pipeline {
     }
         stage(deploy){
         steps{
-        sh 'cp target/multi-project.war /home/vinita/Documents/devops/apache-tomcat-9.0.93/webapps'
+        sh 'cp target/multibranchrepo.war /home/vinita/Documents/devops/apache-tomcat-9.0.93/webapps'
 }
 }
 }
