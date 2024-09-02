@@ -1,14 +1,12 @@
 pipeline {
     agent any
-
     stages {
         stage('checkout') {
             steps {
                 git 'https://github.com/vinitamokadam30/multibranchrepo.git'
             }
         }
-        stage {
-        stage('build')
+        stage('build'){
         steps{
         sh 'mvn install'
         }
